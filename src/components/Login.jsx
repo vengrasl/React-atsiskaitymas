@@ -9,20 +9,19 @@ const Login = () => {
     password: ''
   })
 
-  const [failedLogIn, setFailedLogIn] = useState(false);
+  const { users, setLoggedInUser } = useContext(UserContext);
 
-  const { users } = useContext(UserContext);
+  const [failedLogIn, setFailedLogIn] = useState(false);
 
   const navigate =  useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const successfulLogin = users.find(user => user.email === formFields.eMail && user.password === formFields.password)
-    if (successfulLogin){
-      console.log('sucess');
+    const loggedInUser  = users.find(user => user.email === formFields.eMail && user.password === formFields.password)
+    if (loggedInUser){
+      setLoggedInUser(loggedInUser)
       navigate('/home');
     } else {
-      console.log('fail');
       setFailedLogIn(true);
     }
   }
