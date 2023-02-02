@@ -28,7 +28,6 @@ const UserProvider = ({ children }) => {
       body: JSON.stringify(newUser)
     })
       setUsers([...users, newUser])
-      console.log('ivykis')
   }
 
   

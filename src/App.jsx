@@ -8,7 +8,6 @@ import Add from './components/Add';
 import Footer from './components/Footer';
 
 
-
 const App = () => {
   return (
     <>

@@ -53,49 +53,45 @@ const Register = () => {
           <div className='formContainer'>
             <h1>Fill out form to register</h1>
             <Form className='registerForm'>
-               <label>eMail adress:
-                  <Field 
-                    name='email'
-                    value={values.email} 
-                    onChange={(e)=>setValues({...values, email:e.target.value})}
-                  />
-                  {
-                    errors.email && touched.email ? 
-                      <span>{errors.email}</span>
-                      : null
-                  }
-                </label>
-  
-                <br />
-  
-                <label>Password (must be atleast 8 symbols):
-                  <Field 
-                    type="password"
-                    name='password'
-                    value={values.password} 
-                    onChange={(e)=>setValues({...values, password:e.target.value})}
-                  />
-                  {
-                    errors.password && touched.password ? 
-                      <span>{errors.password}</span>
-                      : null
-                  }
-                </label>
-  
-                  <br />
-  
-                <label>Confirm password:
-                  <Field 
-                    type="password"
-                    name='passwordRepeat'
-                    value={values.passwordRepeat} 
-                    onChange={(e)=>setValues({...values, passwordRepeat:e.target.value})}
-                  />
-                  {
-                    errors.passwordRepeat && touched.passwordRepeat ? 
-                      <span>{errors.passwordRepeat}</span>
-                      : null
-                  }
+              <label>eMail adress:
+                <Field 
+                  name='email'
+                  value={values.email} 
+                  onChange={(e)=>setValues({...values, email:e.target.value})}
+                />
+                {
+                  errors.email && touched.email ? 
+                    <span>{errors.email}</span>
+                    : null
+                }
+              </label>
+              <br />
+              <label>Password (must be atleast 8 symbols):
+                <Field 
+                  type="password"
+                  name='password'
+                  value={values.password} 
+                  onChange={(e)=>setValues({...values, password:e.target.value})}
+                />
+                {
+                  errors.password && touched.password ? 
+                    <span>{errors.password}</span>
+                    : null
+                }
+              </label>
+              <br />
+              <label>Confirm password:
+                <Field 
+                  type="password"
+                  name='passwordRepeat'
+                  value={values.passwordRepeat} 
+                  onChange={(e)=>setValues({...values, passwordRepeat:e.target.value})}
+                />
+                {
+                  errors.passwordRepeat && touched.passwordRepeat ? 
+                    <span>{errors.passwordRepeat}</span>
+                    : null
+                }
                 </label>
                 <button className="registerButton" type='submit'>Register</button>
             </Form>
