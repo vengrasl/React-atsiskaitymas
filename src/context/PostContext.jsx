@@ -13,11 +13,22 @@ const [posts, setPosts] = useState(null);
     }
     postData()
   }, []);
+
+  const addNewPost = async (newPost) => {
+    const res = await fetch('http://localhost:5000/posts', {
+      method: 'POST',
+      body: JSON.stringify(newPost),
+      headers: {'Content-Type': 'application/json'}
+    });
+    const uptatedData = await res.json();
+    setPosts([...posts, uptatedData]);
+  }
     
   return (
     <PostContext.Provider
       value={{
-        posts
+        posts,
+        addNewPost
       }}
     >
       {children}
