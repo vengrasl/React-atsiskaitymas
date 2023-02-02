@@ -23,7 +23,7 @@ const Register = () => {
   const validationSchema = Yup.object().shape({
     email: Yup.string()
       .required('This field must be filled.')
-      .test('unique-username', 'This email is already taken, please choose a different one', value => !users.find(user => user.email === value)),
+      .test('unique-email', 'This email is already registered in our database', value => !users.find(user => user.email === value)),
     password: Yup.string()
       .min(8, 'Password must be at least 8 symbols length.')
       .max(20, 'Password must be 20 characters or less.')

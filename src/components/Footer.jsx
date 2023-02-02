@@ -1,8 +1,8 @@
 const Footer = () => {
   return ( 
-    <>
-      Footer
-    </>
+    <footer>
+      <p>&copy; 2023. Codecademy. All rights reserved</p>
+    </footer>
    );
 }
  
