@@ -241,4 +241,6 @@ section {
   padding-top: 5px;
   font-size: 18px;
 }
-
+.logout:hover {
+  cursor: pointer;
+}
