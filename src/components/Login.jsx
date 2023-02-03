@@ -1,6 +1,7 @@
 import { useState, useContext } from "react";
 import UserContext from "../context/UserContext";
 import { useNavigate } from 'react-router-dom';
+import loginImage from "../images/login-img.png";
 
 const Login = () => {
 
@@ -28,6 +29,7 @@ const Login = () => {
 
   return ( 
     <div className="login">
+        <img src={loginImage} alt="loginImage" />
         <form onSubmit={handleSubmit}>
           <label>
             E-mail adress:

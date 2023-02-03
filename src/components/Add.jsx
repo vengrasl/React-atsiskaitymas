@@ -26,7 +26,7 @@ const Add = () => {
 
   return ( 
     <>
-     <div className="FormAddPost">
+     <div className="addPostDiv">
         <form onSubmit={handleSubmit}>
           <label>
             Title:
@@ -39,14 +39,17 @@ const Add = () => {
           </label>
           <label>
             Description:
-            <textarea 
+            <textarea
+              className="description" 
               type="text" 
               name="description"
               value={formFields.description}
               onChange={(e) => setFormFields({ ...formFields, description: e.target.value })}
             />
           </label>
-          <input type="submit" value="Create new Post" />
+          <div className="btnDiv">
+            <input className="addPostBtn" type="submit" value="Create new Post" />
+          </div>
         </form>
       </div>
     </>

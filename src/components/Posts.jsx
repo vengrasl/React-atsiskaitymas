@@ -8,7 +8,7 @@ const Posts = () => {
   const { posts } = useContext(PostContext);
 
   return ( 
-    <>
+    <section>
     {
       posts ?
       posts.length > 0 ?
@@ -24,7 +24,7 @@ const Posts = () => {
       :
       <img src="https://media.tenor.com/On7kvXhzml4AAAAj/loading-gif.gif" alt="loading"/>
     }
-    </>
+    </section>
   );
 }
  
