@@ -17,8 +17,10 @@ const Posts = () => {
           key={item.id}
           data={item}
         />
-      ) : 
+      ) :
+      <div className="noPosts">
       <p>There are no posts at this time. Be the first one to Add a post by clicking <Link to='/add'>HERE</Link> </p>
+      </div> 
       :
       <img src="https://media.tenor.com/On7kvXhzml4AAAAj/loading-gif.gif" alt="loading"/>
     }

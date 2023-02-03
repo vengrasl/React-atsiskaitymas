@@ -148,3 +148,23 @@ footer > p {
 .formContainer > h1 {
   padding-bottom: 15px;
 }
+.noPosts {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  align-items: center;
+  background-color: var(--corp-white-Harbor);
+}
+.noPosts > p {
+  font-size: 30px;
+}
+.noPosts > p > a {
+  text-decoration: none;
+}
+.noPosts > p > a:hover {
+  opacity: 0.9;
+}
+.noPosts > p > a:active {
+opacity: 0.8;
+color: #551a8b;
+}

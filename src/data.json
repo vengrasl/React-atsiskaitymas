@@ -4,9 +4,13 @@
       "id": 1,
       "email": "lukas@gmail.com",
       "password": "123"
+    },
+    {
+      "email": "tomas@gmail.com",
+      "password": "123123123",
+      "passwordRepeat": "123123123",
+      "id": 1675406491924
     }
   ],
-  "posts": [
-    
-  ]
+  "posts": []
 }
