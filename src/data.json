@@ -4,12 +4,6 @@
       "id": 1,
       "email": "lukas@gmail.com",
       "password": "123"
-    },
-    {
-      "email": "naujasVartotojas",
-      "password": "12345678",
-      "passwordRepeat": "12345678",
-      "id": 1675335605142
     }
   ],
   "posts": [

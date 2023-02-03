@@ -34,7 +34,7 @@ const Register = () => {
   });
 
   return ( 
-    <>
+    <div className="registerPage">
       <Formik
         initialValues={{
           email: '',
@@ -51,10 +51,11 @@ const Register = () => {
       >
         {({ errors, touched, values, setValues }) => (
           <div className='formContainer'>
-            <h1>Fill out form to register</h1>
+            <h1>Fill out the form to register</h1>
             <Form className='registerForm'>
-              <label>eMail adress:
-                <Field 
+              <label>Email adress:
+                <Field
+                  type="email"
                   name='email'
                   value={values.email} 
                   onChange={(e)=>setValues({...values, email:e.target.value})}
@@ -65,7 +66,6 @@ const Register = () => {
                     : null
                 }
               </label>
-              <br />
               <label>Password (must be atleast 8 symbols):
                 <Field 
                   type="password"
@@ -79,7 +79,6 @@ const Register = () => {
                     : null
                 }
               </label>
-              <br />
               <label>Confirm password:
                 <Field 
                   type="password"
@@ -98,7 +97,7 @@ const Register = () => {
           </div>
         )} 
       </Formik>
-    </>
+    </div>
   );
 }
  
