@@ -27,8 +27,7 @@ const Login = () => {
   }
 
   return ( 
-    <>
-    <div>
+    <div className="login">
         <form onSubmit={handleSubmit}>
           <label>
             E-mail adress:
@@ -48,13 +47,12 @@ const Login = () => {
               onChange={(e)=>setFormFields({...formFields, password:e.target.value})}
             />
           </label>
-          <input type="submit" value="Log In" />
-          {
-            failedLogIn && <p>Wrong log in info</p>
-          }
+          <input className="loginButton" type="submit" value="Log In" />
         </form>
+        {
+          failedLogIn && <p className="failedLogin">Wrong log in info</p>
+        }
       </div>
-    </>
    );
 }
  

@@ -69,3 +69,37 @@ footer > p {
   font-size: 18px;
 }
 
+.login {
+  background-color: var(--corp-white-Harbor);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+.login > form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.login > form > label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+.loginButton {
+  background-color: var(--corp-light-Harbor);
+  border: 2px solid var(--corp-dark-Harbor);
+  cursor: pointer;
+}
+.loginButton:hover{
+  opacity: 0.9;
+}
+.loginButton:active{
+  opacity: 0.8;
+}
+.failedLogin {
+  padding-top: 5px;
+  color: red
+}
