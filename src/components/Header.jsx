@@ -6,11 +6,14 @@ import { useNavigate } from "react-router-dom";
 
 const Header = () => {
   const { loggedInUser, setLoggedInUser } = useContext(UserContext);
+
   const navigation = useNavigate();
+
   const logout = () => {
     setLoggedInUser(null);
     navigation('/');
   }
+  
   return ( 
     <header>
       <div className="headerLogo">

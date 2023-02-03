@@ -30,17 +30,14 @@ const UserProvider = ({ children }) => {
       setUsers([...users, newUser])
   }
 
-  
-
-
   return (
     <UserContext.Provider 
-    value= {{
-      users,
-      loggedInUser,
-      setLoggedInUser,
-      addNewUser
-    }}
+      value= {{
+        users,
+        loggedInUser,
+        setLoggedInUser,
+        addNewUser
+      }}
     >
       {children}
     </UserContext.Provider>

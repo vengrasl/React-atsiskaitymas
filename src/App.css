@@ -96,6 +96,7 @@ footer > p {
   background-color: var(--corp-light-Harbor);
   border: 2px solid var(--corp-dark-Harbor);
   cursor: pointer;
+  height: 20px;
 }
 .loginButton:hover{
   opacity: 0.9;

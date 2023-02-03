@@ -21,7 +21,7 @@ const Add = () => {
       id: Date.now()
     };
     addNewPost(newPost);
-    navigate('/home')
+    navigate('/home');
   }  
 
   return ( 

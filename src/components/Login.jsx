@@ -20,7 +20,7 @@ const Login = () => {
     e.preventDefault();
     const loggedInUser  = users.find(user => user.email === formFields.eMail && user.password === formFields.password)
     if (loggedInUser){
-      setLoggedInUser(loggedInUser)
+      setLoggedInUser(loggedInUser);
       navigate('/home');
     } else {
       setFailedLogIn(true);

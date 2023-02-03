@@ -9,9 +9,9 @@ const [posts, setPosts] = useState(null);
     const postData = async () => {
       const res = await fetch('http://localhost:5000/posts');
       const data = await res.json();
-      setPosts(data)
+      setPosts(data);
     }
-    postData()
+    postData();
   }, []);
 
   const addNewPost = async (newPost) => {

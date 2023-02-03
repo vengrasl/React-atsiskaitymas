@@ -15,8 +15,8 @@ const Register = () => {
       ...values,
       id: Date.now(),
     }
-    addNewUser(newUser)
-    setLoggedInUser(newUser)
+    addNewUser(newUser);
+    setLoggedInUser(newUser);
     navigation('/home');
   } 
 
@@ -43,9 +43,9 @@ const Register = () => {
         }} 
         validationSchema={validationSchema}
           
-        onSubmit= {(values, {resetForm} )=> {
+        onSubmit= {(values, {resetForm}) => {
           console.log(values);
-          resetForm({values: ''})
+          resetForm({values: ''});
           handleSubmit(values);
         }}
       >
